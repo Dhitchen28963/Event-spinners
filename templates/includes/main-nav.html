@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="{% url 'home' %}" class="brand">Event Spinners</a>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'services' %}">Services</a></li>
+      <li class="dropdown">
+        <a href="{% url 'events:list' %}" class="dropdown-toggle">Events</a>
+        <ul class="dropdown-menu">
+          <li><a href="{% url 'events:list' %}?type=wedding">Weddings</a></li>
+          <li><a href="{% url 'events:list' %}?type=corporate">Corporate</a></li>
+          <li><a href="{% url 'events:list' %}?type=private">Private Parties</a></li>
+        </ul>
+      </li>
+      <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+      <li><a href="{% url 'careers' %}">Careers</a></li>
+    </ul>
+  </div>
+</nav>

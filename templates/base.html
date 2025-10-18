@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Event Spinners{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'home/css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+</head>
+<body>
+    {% include 'includes/main-nav.html' %} <!-- Only main nav -->
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>2025 Event Spinners © All Rights Reserved</p>
+    </footer>
+
+    <script src="{% static 'home/js/nav.js' %}" defer></script>
+    <script src="{% static 'home/js/script.js' %}" defer></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.events-hero, .events-list, .event-detail {
+    background-color: #dcdcdc;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.events-hero h1, .events-list h1, .event-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.events-hero p, .events-list p, .event-detail p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.events-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.events-list li {
+    margin: 10px 0;
+}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ event.title }} - Event Spinners{% endblock %}
+
+{% block content %}
+<section class="event-detail">
+    <h1>{{ event.title }}</h1>
+    <p>Date: {{ event.date }}</p>
+    <p>Location: {{ event.location }}</p>
+    <p>Description: {{ event.description }}</p>
+</section>
+{% endblock %}

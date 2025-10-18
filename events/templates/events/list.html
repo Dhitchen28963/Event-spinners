@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}All Events - Event Spinners{% endblock %}
+
+{% block content %}
+<section class="events-list">
+    <h1>All Events</h1>
+    <ul>
+        {% for event in events %}
+            <li><a href="{% url 'events:detail' event.id %}">{{ event.title }} - {{ event.date }}</a></li>
+        {% endfor %}
+    </ul>
+</section>
+{% endblock %}
