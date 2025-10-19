@@ -1,0 +1,11 @@
+.music-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.music-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}

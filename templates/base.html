@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Event Spinners{% endblock %}</title>
+
+    <!-- Google Font: Permanent Marker -->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- Home app styles -->
     <link rel="stylesheet" href="{% static 'home/css/nav.css' %}">
     <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+
+    <!-- About app styles -->
+    <link rel="stylesheet" href="{% static 'about/css/style.css' %}">
 </head>
 <body>
-    {% include 'includes/main-nav.html' %} <!-- Only main nav -->
+    {% include 'includes/main-nav.html' %}
 
     {% block content %}{% endblock %}
 
@@ -17,6 +25,7 @@
         <p>2025 Event Spinners © All Rights Reserved</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="{% static 'home/js/nav.js' %}" defer></script>
     <script src="{% static 'home/js/script.js' %}" defer></script>
 </body>

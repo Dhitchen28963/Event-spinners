@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Music & Mixes{% endblock %}
+
+{% block content %}
+<h1>Music & Mixes</h1>
+
+<div class="music-gallery">
+    <img src="{% static 'music/images/song1.jpg' %}" alt="Song 1">
+    <img src="{% static 'music/images/song2.jpg' %}" alt="Song 2">
+    <img src="{% static 'music/images/song3.jpg' %}" alt="Song 3">
+</div>
+
+<script src="{% static 'music/js/music.js' %}" defer></script>
+<link rel="stylesheet" href="{% static 'music/css/music.css' %}">
+{% endblock %}

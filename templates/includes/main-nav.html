@@ -1,6 +1,11 @@
+{% load static %}
+
 <nav class="navbar">
   <div class="nav-container">
-    <a href="{% url 'home' %}" class="brand">Event Spinners</a>
+    <!-- Brand as clickable image -->
+    <a href="{% url 'home' %}" class="brand">
+      <img src="{% static 'home/images/event-spinners-logo.webp' %}" alt="Event Spinners Logo" class="nav-logo">
+    </a>
 
     <div class="hamburger" id="hamburger">
       <span></span>
